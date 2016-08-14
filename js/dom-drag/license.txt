@@ -1,2 +1,0 @@
-Copyright 2001, Aaron Boodman
-This code is public domain. Please use it for good, not evil.
