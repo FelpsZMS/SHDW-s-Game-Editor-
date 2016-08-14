@@ -1,0 +1,17 @@
+$color: (light-gray:#808080,gray:#464646,dark-gray:#333333,light-blue:#107FC9,dark-blue:#0B108C,orange:#FF8040,font:white);
+/*!
+font:#0080FF
+*/
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+}
+html,body{height: 100%;}
+.wrapper {
+	height: 100%;
+	display: table;
+	width: 100%;
+	text-align: center;
+}

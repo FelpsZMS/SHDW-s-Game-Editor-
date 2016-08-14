@@ -1,0 +1,21 @@
+#toolbar{
+	display:inline-block;
+	background: map-get($color,gray);
+	.button{
+		float:left;
+		width:24px;
+		height:24px;
+		border:1px solid map-get($color,light-gray);
+		&:hover{
+			background: map-get($color,light-gray);
+		}
+		&:nth-child(1){
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		&:nth-last-child(1){
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+}	

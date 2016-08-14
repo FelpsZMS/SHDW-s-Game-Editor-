@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<link rel='stylesheet' href='css/style.css'></link>
+		<script language="javascript" src="js/dom-drag.js"></script>
+		<script language="javascript" src="js/ypSimpleScrollC.js"></script>
+		<script src="js/menu.js"></script>
+	</head>
+	<body onload="loaded()">
+	<div id="overlay"></div>
+		<div class="window" id="novoMapaWindow">
+			<div class="toolbar" tabindex=0>
+				<div class="button" id="close" onclick="this.parentElement.parentElement.style.display='none'"></div>
+				<span id="name">Novo Mapa</span>
+			</div>
+			<div id="content"></div>
+		</div>
+		<div class="wrapper">
+			<div class="header">
+				<nav>
+					<ul>
+						<li><a href="#">File</a>
+							<ul>
+								<li><a href="#" onclick="novoMapa.open()">New</a></li>
+								<li><a href="#">Open</a></li>
+								<li><a href="#">Save</a>
+								</li><li><a href="#">Recent</a>
+								<ul>
+									<li><a href="#" style="color:gray">empty</a></li>
+								</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Articles</a>
+							<ul>
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">User Experience</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Inspiration</a></li>
+					</ul>
+				</nav>				
+			</div>
+			<div class="main">
+				<div class="box sidebar">
+					<div id="content" id="tilebar">
+						
+					</div>
+				</div>
+				<div class="box map">
+					<div id="content">
+					</div>
+				</div>
+				<div class="box sidebar">
+					<div id="content">
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div id="toolbar">
+					<div class="button"></div>
+					<div class="button"></div>
+					<div class="button"></div>
+					<div class="button"></div>
+				</div>
+				<div id="toolbar" style="width:10px;"></div>
+				<div id="toolbar">
+					<div class="button"></div>
+					<div class="button"></div>
+					<div class="button"></div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

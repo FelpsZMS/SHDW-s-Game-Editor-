@@ -1,0 +1,13 @@
+.rolagem{
+	transition: opacity linear .1s;
+	float:right;
+	height:100%;
+	width:8px;
+	margin:2px;
+	opacity:0;
+	#thumb{
+		background:url("../imgs/thumb.png");
+		width:100%;
+		height:50px;
+	}
+}
