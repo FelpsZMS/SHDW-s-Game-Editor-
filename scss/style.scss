@@ -3,6 +3,8 @@
 @import "_rolagem";
 @import "_toolbar";
 @import "_overlay";
+@import "_tilemap_selector";
+@import "_modals";
 
 @mixin border(){
 	border-radius:5px;

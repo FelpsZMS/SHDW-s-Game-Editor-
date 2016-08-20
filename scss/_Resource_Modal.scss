@@ -1,0 +1,1 @@
+@mixin border(){	border-radius:5px;	border:solid 2px map-get($color,light-gray);}.modal_overlay{	.modal#resource_modal{		width:700px;		height:500px;		.modal_content{			.sidebar{				float:left;				height:100%;			}			.sidebar.files{				width:30%;				@include border();			}			.sidebar.content{				width:70%;			}		}	}}
