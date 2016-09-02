@@ -10,49 +10,55 @@
 	border-radius:5px;
 	border:solid 2px map-get($color,light-gray);
 }
-
+html,body{height: 100%;}
 body {
 	overflow:none;
 	background: map-get($color,dark-gray);
 	color: map-get($color,font);
-}
-.header {
-	background:map-get($color,gray);
-	display: table-row;
-	height: 1px;
-}
-.main {
-	display: table;
-	height: 100%;
-	width: 100%;
-}
-.box {
-	display: table-cell;
-}
-.sidebar {
-	width: 180px;
-	padding:10px;
-	#content{
-		width:100%;
-		height:100%;
-		background: map-get($color,gray);
-		@include border();
+	.wrapper {
+		height: 100%;
+		display: table;
+		width: 100%;
+		text-align: center;
 	}
-}
-.map {
-	padding:10px;
-	#content{
-		@include border();
-		width:100%;
-		height:100%;
-		background-color: map-get($color,gray);
-		background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
-		height:100%;
-		background-size:50px 50px;
+	.header {
+		background:map-get($color,gray);
+		display: table-row;
+		height: 1px;
 	}
-}
-.footer {
-	display: table-row;
-	color: #fffad5;
-	height:1px;
+	.main {
+		display: table;
+		height: 100%;
+		width: 100%;
+		.box {
+			display: table-cell;
+		}
+		.sidebar {
+			width: 180px;
+			padding:10px;
+			#content{
+				width:100%;
+				height:100%;
+				background: map-get($color,gray);
+				@include border();
+			}
+		}
+		.map {
+			padding:10px;
+			#content{
+				@include border();
+				width:100%;
+				height:100%;
+				background-color: map-get($color,gray);
+				background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+				height:100%;
+				background-size:50px 50px;
+			}
+		}
+	}
+	.footer {
+		display: table-row;
+		color: #fffad5;
+		height:1px;
+	}
 }

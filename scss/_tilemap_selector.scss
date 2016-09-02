@@ -1,0 +1,47 @@
+#tilebar,#layers{
+	.selector{
+		margin:2px;
+		text-align:left;
+		height:20px;
+		background: map-get($color,light-gray);
+		.menu > ul{background:none;}
+		.menu{
+			position:relative;
+			width:160px;
+			float:left;
+			ul{
+				li > ul{
+					height:60px;
+					overflow:auto;
+				}
+				width:176px;
+				li{width:100%;
+					a{
+						padding:0;width:100%;
+					}
+					&:hover > .s{display:inline-block;}
+				}
+				ul{
+					li{
+						&:hover > .s{display:inline-block;}
+						padding:0;width:100%;
+					}
+				}
+			}
+		}
+		&:hover > .s{display:inline-block;}
+		.s{
+			float:right;
+			display:none;
+			.icon{
+				float:left;
+				&:hover{color:map-get($color,orange);}
+			}
+		}
+	}
+}
+#layers{
+	.selector{
+		background:none;
+	}
+}

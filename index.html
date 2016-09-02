@@ -9,7 +9,7 @@
 		<script src="js/menu.js"></script>
 	</head>
 	<body onload="loaded()">
-		<div class="modal_overlay" modal_open="true">
+		<div class="modal_overlay" modal_open="false">
 			<div class="modal" id="resource_modal">
 				<div class="modal_toolbar">
 					<span id="modal_title">Novo Mapa</span>
@@ -21,16 +21,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="window" id="novoMapaWindow">
-			<div class="toolbar" tabindex=0>
-				<div class="button" id="close" onclick="this.parentElement.parentElement.style.display='none'"></div>
-				<span id="name">Novo Mapa</span>
-			</div>
-			<div id="content"></div>
-		</div>
 		<div class="wrapper">
 			<div class="header">
-				<nav>
+				<nav class="menu">
 					<ul>
 						<li><a href="#">File</a>
 							<ul>
@@ -58,8 +51,21 @@
 				<div class="box sidebar" id="tilebar">
 					<div id="content">
 						<div class="selector">
-							<div></div>
-							<span class="config glyphicon glyphicon-cog"></span>
+							<nav class="menu">
+								<ul>
+									<li><a tabindex=0 href="#">test</a>
+										<div class="s">
+											<div class="glyphicon glyphicon-plus-sign icon"></div>
+											<div class="glyphicon glyphicon-remove-circle icon"></div>
+											<div class="glyphicon glyphicon-cog icon"></div>
+										</div>
+										<ul>
+											<li><a href="#">test</a><div class="s"><div class="glyphicon glyphicon-remove-circle icon"></div><div class="glyphicon glyphicon-cog icon"></div></div></li>
+											<li><a href="#">test</a><div class="s"><div class="glyphicon glyphicon-remove-circle icon"></div><div class="glyphicon glyphicon-cog icon"></div></div></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>
@@ -67,8 +73,25 @@
 					<div id="content">
 					</div>
 				</div>
-				<div class="box sidebar">
+				<div class="box sidebar" id="layers">
 					<div id="content">
+						<div class="selector">
+							<nav class="menu">
+								<ul>
+									<li><a tabindex=0 href="#">Layer 1</a>
+										<div class="s">
+											<div class="glyphicon glyphicon-cog icon"></div>
+											<div class="glyphicon glyphicon-eye-open icon"></div>
+										</div>
+										<ul>
+											<li><a href="#">test</a><div class="s"><div class="glyphicon glyphicon-remove-circle icon"></div><div class="glyphicon glyphicon-cog icon"></div></div></li>
+											<li><a href="#">test</a><div class="s"><div class="glyphicon glyphicon-remove-circle icon"></div><div class="glyphicon glyphicon-cog icon"></div></div></li>
+										</ul>
+									</li>
+									<li><a tabindex=0 href="#">Novo Layer</a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</div>
